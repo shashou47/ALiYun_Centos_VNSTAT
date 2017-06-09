@@ -22,11 +22,11 @@ echo ""
 
 
 # Download pptpd
-if ! yum install epel-release -y then
+if ! yum install epel-release -y;then
     echo "Failed to download epel-release."
     exit 1
 fi
-if ! yum install -y vnstat then
+if ! yum install vnstat -y;then
     echo "Failed to download vnstat."
     exit 1
 fi
