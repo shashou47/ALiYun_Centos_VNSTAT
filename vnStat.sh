@@ -24,7 +24,7 @@ echo ""
 
 yum install epel-release -y
 
-if ! yum install vnstat -y;then
+if ! yum install vnstat -y;then
     echo "Failed to download vnstat."
     exit 1
 fi
@@ -36,7 +36,7 @@ chkconfig vnstat on
 
 echo ""
 echo "vnstat is installed."
-echo "use [vnstat -d] or [vnstat -m]"
+echo "use [vnstat -d] or [vnstat -m] 10 minutes later"
 echo ""
-
+ 
 exit 0
